@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teams Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1 style="margin-top: 20px">Teams you owns</h1>
+      <div class="teamSec">
+        <div class="alert alert" role="alert">
+          <h1 id="teamCatShow">Team category</h1>
+          <p id="teamMemShow">Team member</p>
+        </div>
+      </div>
+      <br />
+      <div class="teamSec">
+        <div class="alert alert" role="alert">
+          <h1>team cat</h1>
+          <p>Team member</p>
+        </div>
+      </div>
+      <h1 style="margin-top: 20px">Teams your part of</h1>
+      <div class="teamSec">
+        <div class="alert alert" role="alert">
+          <h1>team cat</h1>
+          <p>Team member</p>
+        </div>
+      </div>
+      <br />
+      <div class="teamSec">
+        <div class="alert alert" role="alert">
+          <h1>team cat</h1>
+          <p>Team member</p>
+        </div>
+      </div>
+    </center>
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="background-color: rgba(0, 0, 0, 0.623)"
+        >
+          <div class="modal-header"></div>
+          <div class="modal-body">
+            <div class="form-bg">
+              <div class="main-rate">
+                <span class="fa fa-star"></span>&nbsp;&nbsp;
+                <span class="fa fa-star"></span>&nbsp;&nbsp;
+                <span class="fa fa-star"></span>&nbsp;&nbsp;
+                <span class="fa fa-star"></span>&nbsp;&nbsp;
+                <span class="fa fa-star"></span>&nbsp;&nbsp;
+              </div>
+
+              <h2 class="heading-section3" style="color: white">
+                Create Your Team
+              </h2>
+              <form
+                onsubmit="return false"
+                id="contactForm"
+                name="contactForm"
+                class="contactForm"
+              >
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="text"
+                      id="teamName"
+                      placeholder="Team Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="categopry"
+                      id="teamCategopry"
+                      placeholder="categopry"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="email"
+                      id="teamEmail"
+                      placeholder="Member Type Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <input
+                  type="submit"
+                  onclick="onCreateTeam()"
+                  value="Create"
+                  class="btn btn-primary"
+                  style="margin-top: 15px"
+                />
+                <input
+                  data-bs-dismiss="modal"
+                  type="button"
+                  value="Cancel"
+                  class="btn btn-danger"
+                  style="margin-top: 15px"
+                />
+                <div class="submitting"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      href="#exampleModalToggle"
+      role="button"
+      style="
+        position: fixed;
+        right: -35px;
+        bottom: 50%;
+        transform: rotate(-90deg);
+      "
+      >Create Team</a
+    >
+  </body>
+  <script src="app.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
